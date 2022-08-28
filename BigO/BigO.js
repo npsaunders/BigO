@@ -69,7 +69,7 @@ function compArr(arr1, arr2) {
 
 //Third solution, convert the first array to an object and use second array to check the properties to see
 //if there's a match
-function objSol(arr1, arr2) {
+function objSol(arr1 = [], arr2 = []) {
   arr1.push('b');
   let newObj = {};
   for (i = 0; i < arr1.length; i++) {
@@ -88,4 +88,4 @@ function objSol(arr1, arr2) {
 
 // console.log(`Nested for loops is three letter match: ${compArr(arr1, arr2)}`);
 
-console.log(objSol(arr1, arr2))
+console.log(objSol(arr1))
